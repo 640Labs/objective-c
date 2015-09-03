@@ -41,7 +41,10 @@ Pod::Spec.new do |s|
   ]
 
   s.library   = "z"
-  s.dependency "CocoaLumberjack", "2.0.0"
+
+  ## 2015-09-02 DriveKit MOD: Switching to CocoaLumberjack 2.0.1 because 2.0.0 has bugs. The
+  ## publicly released PubNub iOS CocoaPod requires 2.0.0.
+  s.dependency "CocoaLumberjack", "~> 2.0.1"
 
 
 s.license = %{ :type => "MIT", :text => <<-LICENSE'
